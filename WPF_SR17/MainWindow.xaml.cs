@@ -25,7 +25,6 @@ namespace WPF_SR17
             InitializeComponent();
         }
 
-
         private void colorPicker_ColorChanged(object sender, RoutedPropertyChangedEventArgs<Color> e)
         {
             textblock.Foreground = new SolidColorBrush(e.NewValue);

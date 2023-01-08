@@ -20,9 +20,7 @@ namespace WPF_SR17
     /// </summary>
     public partial class ColorPicker : UserControl
 
-
     {
-
         public static DependencyProperty ColorProperty;
         public static DependencyProperty RedProperty;
         public static DependencyProperty GreenProperty;
@@ -75,7 +73,6 @@ namespace WPF_SR17
             set { SetValue(BlueProperty, value); }
         }
 
-
         private static void OnColorRGBChanged(DependencyObject sender,
             DependencyPropertyChangedEventArgs e)
         {
@@ -104,7 +101,6 @@ namespace WPF_SR17
             args.RoutedEvent = ColorChangedEvent;
             colorpicker.RaiseEvent(args);
         }
-
 
         public event RoutedPropertyChangedEventHandler<Color> ColorChanged
         {
